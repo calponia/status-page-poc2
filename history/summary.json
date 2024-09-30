@@ -149,19 +149,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/management.pantaris.io.ico",
     "slug": "operations",
     "status": "up",
-    "uptime": "2.58%",
-    "uptimeDay": "2.58%",
-    "uptimeWeek": "2.58%",
-    "uptimeMonth": "2.58%",
-    "uptimeYear": "2.58%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 461,
     "timeDay": 461,
     "timeWeek": 461,
     "timeMonth": 461,
     "timeYear": 461,
-    "dailyMinutesDown": {
-      "2024-09-30": 9
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "CDN",
