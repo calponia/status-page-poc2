@@ -24,9 +24,6 @@ status-website:
   # cname: demo.upptime.js.org
   name: PANTARIS Status
   baseUrl: /status-page-poc2
-  theme: light
-  logoUrl: https://calponia.github.io/status-page-poc2/logo.svg
-  favicon: https://calponia.github.io/status-page-poc2/favicon.png
   # introTitle: ""
   # introMessage: ""
   navbar:
@@ -36,6 +33,23 @@ status-website:
       href: https://platform.pantaris.io
     - title: Contact & Support
       href: https://documentation.pantaris.io/support/contact
+  # custom css and styling
+  theme: light
+  logoUrl: https://calponia.github.io/status-page-poc2/logo.svg
+  favicon: https://calponia.github.io/status-page-poc2/favicon.png
+  css: |
+    footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+  customBodyHtml: |
+    <footer>
+      © 2024 ETAS GmbH | <a href="/">Home</a> | <a href="/workspace">Workspace</a> | <a href="/contact-support">Contact & Support</a>
+    </footer>
+    
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
