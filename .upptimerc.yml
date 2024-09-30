@@ -25,7 +25,8 @@ status-website:
   name: PANTARIS Status
   baseUrl: /status-page-poc2
   theme: light
-  logoUrl: https://calponia.github.io/status-page-poc2/logo.svg
+  logoUrl: https://$OWNER.github.io/$REPO/logo.svg
+  favicon: https://$OWNER.github.io/$REPO/favicon.png
   # introTitle: ""
   # introMessage: ""
   navbar:
