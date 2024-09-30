@@ -3,20 +3,9 @@
 owner: calponia # Your GitHub organization or username, where this repository lives
 repo: status-page-poc2 # The name of this repository
 
-sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+# configure footer: https://upptime.js.org/docs/faq#how-do-i-remove-the-powered-by-upptime-in-the-footer-of-my-website
+i18n:
+  footer: © 2024 [ETAS GmbH](https://platform.pantaris.io/corporate-information)
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -37,21 +26,106 @@ status-website:
   theme: light
   logoUrl: https://calponia.github.io/status-page-poc2/logo.svg
   favicon: https://calponia.github.io/status-page-poc2/favicon.png
-i18n: # https://upptime.js.org/docs/faq#how-do-i-remove-the-powered-by-upptime-in-the-footer-of-my-website
-  footer: © 2024 [ETAS GmbH](https://platform.pantaris.io/corporate-information)
-#  css: |
-#    footer {
-#      background-color: #f0f0f0;
-#      padding: 20px;
-#      text-align: center;
-#      font-size: 14px;
-#      color: #333;
-#    }
-#  customBodyHtml: |
-#    <footer>
-#      © 2024 ETAS GmbH | <a href="/">Home</a> | <a href="/workspace">Workspace</a> | <a href="/contact-support">Contact & Support</a>
-#    </footer>
-#
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# configuration of monitoring endpoints: https://upptime.js.org/docs/configuration#endpoints
+sites:
+  - name: Login
+    url: https://my.pantaris.io
+    expectedStatusCodes:
+      - 200
+
+  - name: Platform
+    url: https://platform.pantaris.io
+    expectedStatusCodes:
+      - 200
+
+  - name: Organizations
+    url: https://organization.pantaris.io
+    expectedStatusCodes:
+      - 200
+
+  - name: Service Portal
+    url: https://portal.pantaris.io
+    expectedStatusCodes:
+      - 200
+
+  - name: Marketplace
+    url: https://marketplace.pantaris.io
+    expectedStatusCodes:
+      - 200
+
+  - name: Documentation
+    url: https://documentation.pantaris.io
+    expectedStatusCodes:
+      - 200
+
+  - name: Support
+    url: https://helpspot.calponia.com
+    expectedStatusCodes:
+      - 200
+    __dangerous__body_down_if_text_missing: "<title>Calponia</title>"
+
+  - name: Forum
+    url: https://forum.pantaris.io
+    expectedStatusCodes:
+      - 200
+
+  - name: Operations
+    url: https://management.pantaris.io
+    expectedStatusCodes:
+      - 200
+    __dangerous__body_down_if_text_missing: "<title>Calponia Management</title>"
+
+  - name: CDN
+    url: https://cdn.pantaris.io
+    expectedStatusCodes:
+      - 200
+    __dangerous__body_down_if_text_missing: "<h1>Calponia CDN</h1>"
+
+  - name: Upload & Webdav Service
+    url: https://upload.pantaris.io/healthcheck
+    expectedStatusCodes:
+      - 200
+    __dangerous__body_down_if_text_missing: "{\"data\":{\"code\":\"OPERATIONAL\"}}"
+
+  - name: Download Service
+    url: https://download.pantaris.io/healthcheck
+    expectedStatusCodes:
+      - 200
+    __dangerous__body_down_if_text_missing: "{\"data\":{\"code\":\"OPERATIONAL\"}}"
+
+  - name: Applications
+    url: https://healthcheck.app.pantaris.io
+    expectedStatusCodes:
+      - 203
+
+  - name: External Traffic Service
+    url: http://0ca2d4b8f342a21cfb6de71d1d1c46b4.ext.pantaris.io:3001/
+    expectedStatusCodes:
+      - 200
+
+  - name: Docker Registry
+    url: https://docker.pantaris.io
+    expectedStatusCodes:
+      - 200
+
+  - name: API v2
+    url: https://api.pantaris.io/v2/healthcheck
+    expectedStatusCodes:
+      - 200
+    __dangerous__body_down_if_text_missing: "{\"data\":{\"code\":\"OPERATIONAL\"}}"
+
+  - name: Message Bus
+    url: https://status-gateway.pantaris.io/v1/status/management-rabbitmq
+    expectedStatusCodes:
+      - 200
+
+  - name: Logs Monitoring
+    url: https://status-gateway.pantaris.io/v1/status/kibana
+    expectedStatusCodes:
+      - 200
+
+  - name: Metrics Monitoring
+    url: https://grafana.mon.pantaris.io
+    expectedStatusCodes:
+      - 401
