@@ -37,19 +37,21 @@ status-website:
   theme: light
   logoUrl: https://calponia.github.io/status-page-poc2/logo.svg
   favicon: https://calponia.github.io/status-page-poc2/favicon.png
-  css: |
-    footer {
-      background-color: #f0f0f0;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #333;
-    }
-  customBodyHtml: |
-    <footer>
-      © 2024 ETAS GmbH | <a href="/">Home</a> | <a href="/workspace">Workspace</a> | <a href="/contact-support">Contact & Support</a>
-    </footer>
-    
+  i18n:
+    footer: © 2024 [ETAS GmbH](https://platform.pantaris.io/corporate-information)
+#  css: |
+#    footer {
+#      background-color: #f0f0f0;
+#      padding: 20px;
+#      text-align: center;
+#      font-size: 14px;
+#      color: #333;
+#    }
+#  customBodyHtml: |
+#    <footer>
+#      © 2024 ETAS GmbH | <a href="/">Home</a> | <a href="/workspace">Workspace</a> | <a href="/contact-support">Contact & Support</a>
+#    </footer>
+#
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
