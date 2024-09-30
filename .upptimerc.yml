@@ -23,9 +23,11 @@ status-website:
     - title: Contact & Support
       href: https://documentation.pantaris.io/support/contact
   # custom css and styling
-  theme: light
+  # theme: light
+  themeUrl: https://calponia.github.io/status-page-poc2/etas-theme.css
   logoUrl: https://calponia.github.io/status-page-poc2/logo.svg
   favicon: https://calponia.github.io/status-page-poc2/favicon.png
+
 
 # configuration of monitoring endpoints: https://upptime.js.org/docs/configuration#endpoints
 sites:
@@ -34,7 +36,7 @@ sites:
     expectedStatusCodes:
       - 200
 
-  - name: Platform
+  - name: Workspace
     url: https://platform.pantaris.io
     expectedStatusCodes:
       - 200
