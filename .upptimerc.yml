@@ -37,8 +37,8 @@ status-website:
   theme: light
   logoUrl: https://calponia.github.io/status-page-poc2/logo.svg
   favicon: https://calponia.github.io/status-page-poc2/favicon.png
-  i18n:
-    footer: © 2024 [ETAS GmbH](https://platform.pantaris.io/corporate-information)
+i18n: # https://upptime.js.org/docs/faq#how-do-i-remove-the-powered-by-upptime-in-the-footer-of-my-website
+  footer: © 2024 [ETAS GmbH](https://platform.pantaris.io/corporate-information)
 #  css: |
 #    footer {
 #      background-color: #f0f0f0;
