@@ -2,6 +2,7 @@
 # Change these first
 owner: calponia # Your GitHub organization or username, where this repository lives
 repo: status-page-poc2 # The name of this repository
+statuspageurl: https://$OWNER.github.io/$REPO
 
 sites:
   - name: Google
@@ -23,15 +24,19 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
   name: PANTARIS Status
-  baseUrl: /status-page-poc2
+  baseUrl: /$REPO
   theme: light
-  logoUrl: https://$OWNER.github.io/$REPO/logo.svg
-  favicon: https://$OWNER.github.io/$REPO/favicon.png
+  logoUrl: $STATUSPAGEURL/logo.svg
+  favicon: $STATUSPAGEURL/favicon.png
   # introTitle: ""
   # introMessage: ""
   navbar:
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Home
+      href: https://pantaris.io
+    - title: Workspace
+      href: https://platform.pantaris.io
+    - title: Contact & Support
+      href: https://documentation.pantaris.io/support/contact
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
