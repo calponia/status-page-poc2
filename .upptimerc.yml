@@ -74,7 +74,6 @@ sites:
     url: https://management.pantaris.io
     expectedStatusCodes:
       - 200
-    __dangerous__body_down_if_text_missing: "<title>Calponia Management</title>"
 
   - name: CDN
     url: https://cdn.pantaris.io
