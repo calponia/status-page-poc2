@@ -43,7 +43,7 @@ status-website:
   links:
     - rel: stylesheet
       ## without cname
-      href: https://calponia.github.io/status-page-poc2/custom.css
+      # href: https://calponia.github.io/status-page-poc2/custom.css
       ## with cname
       href: https://status.pantaris-sandbox.de/custom.css
 
