@@ -1,16 +1,8 @@
-/*
-Todo:
-- Logo smaller
-- Change color of graphs on secondary page ?
-- Change styling of article boxes ?
-*/
-
 nav {
   /*height: 58px;*/
   box-sizing: border-box;
   background-image: linear-gradient(to right, #164293, #89037a);
   font-family: Manrope, sans-serif !important;
-  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
@@ -18,39 +10,17 @@ nav {
 
 /*Decrease ETAS logo size*/
 nav img {
-  transform: scale(0.5); /* Scale the images by 0.5 */
-  display: inline-block;  /* Ensures the image scales properly */
+  width: 25%;
+  height: auto;
+  display: inline-block;
 }
 
-/*Remove graphs on main status page
-article.graph {
-  background-image: none !important;
-}
-*/
-
-/*Adjust color of charts on main status page
-article.graph {
-  background-color: #164293;
-  background-blend-mode: multiply;
+/* Remove right padding of navbar elements */
+li a {
+    padding-right: 0 !important;
 }
 
-*/
-
-article {
-    /* Set the article's background color if needed */
-    background-color: transparent;
-
-    /* Apply the desired color to the background image */
-    background-image:
-        linear-gradient(#164293, #164293),
-        var(--background);
-    background-blend-mode: color;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/*Custom Manrope font*/
+/*Use custom Manrope font*/
 
 @font-face {
   font-family: 'Manrope';
