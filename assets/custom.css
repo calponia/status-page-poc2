@@ -9,6 +9,12 @@ nav {
   color: #fff;
 }
 
+nav img {
+  transform: scale(0.5); /* Scale the images by 0.7 */
+  display: inline-block;  /* Ensures the image scales properly */
+  transition: transform 0.3s ease; /* Optional: Smooth scaling */
+}
+
 @font-face {
   font-family: 'Manrope';
   src: url('/assets/fonts/Manrope-ExtraLight.ttf');
