@@ -29,7 +29,7 @@ status-website:
   favicon: https://calponia.github.io/status-page-poc2/favicon.png
   links:
     - rel: stylesheet
-      href: https://calponia.github.io/custom.css
+      href: https://calponia.github.io/status-page-poc2/custom.css
 
 # configuration of monitoring endpoints: https://upptime.js.org/docs/configuration#endpoints
 sites:
