@@ -5,7 +5,7 @@ repo: status-page-poc2 # The name of this repository
 
 # configure footer: https://upptime.js.org/docs/faq#how-do-i-remove-the-powered-by-upptime-in-the-footer-of-my-website
 i18n:
-  footer: © 2024 [ETAS GmbH](https://platform.pantaris.io/corporate-information)
+  footer: © 2024 [ETAS GmbH](https://policies.pantaris.io/corporate-information)
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -27,6 +27,18 @@ status-website:
   themeUrl: https://calponia.github.io/status-page-poc2/etas-theme.css
   logoUrl: https://calponia.github.io/status-page-poc2/logo.svg
   favicon: https://calponia.github.io/status-page-poc2/favicon.png
+  css: |
+    nav {
+      height: 58px;
+      box-sizing: border-box;
+      background-image: linear-gradient(to right, #164293, #89037a);
+      font-family: Manrope, sans-serif !important;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #fff;
+    }
+    
 
 
 # configuration of monitoring endpoints: https://upptime.js.org/docs/configuration#endpoints
