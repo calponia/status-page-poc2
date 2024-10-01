@@ -1,3 +1,5 @@
+/* This is the light theme with minor adjustments: https://github.com/upptime/status-page/blob/master/static/themes/light.css */
+
 :root {
   --body-background-color: #ffffff;
   --body-text-color: #002626;
@@ -25,17 +27,3 @@
   --graph-filter: none;
 }
 
-/* ETAS BLUE: 164293
-
-nav {
-    height: 58px;
-    box-sizing: border-box;
-    background-image: linear-gradient(to right, #164293, #89037a);
-    font-family: Manrope, sans-serif !important;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #fff;
-}
-
-*/

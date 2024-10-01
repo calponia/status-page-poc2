@@ -1,3 +1,10 @@
+/*
+Todo:
+- Logo smaller
+- Change color of graphs on secondary page ?
+- Change styling of article boxes ?
+*/
+
 nav {
   /*height: 58px;*/
   box-sizing: border-box;
@@ -9,83 +16,91 @@ nav {
   color: #fff;
 }
 
+/*Decrease ETAS logo size*/
 nav img {
   transform: scale(0.5); /* Scale the images by 0.5 */
   display: inline-block;  /* Ensures the image scales properly */
   transition: transform 0.3s ease; /* Optional: Smooth scaling */
 }
 
-/*Remove graphs on main status page*/
+/*Remove graphs on main status page
 article.graph {
-    background-image: none !important;
+  background-image: none !important;
+}
+*/
+
+/*Adjust color of charts on main status page*/
+article.graph {
+  background-color: #164293;
+  background-blend-mode: multiply;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-ExtraLight.ttf');
+  src: url('fonts/Manrope-ExtraLight.ttf');
   font-weight: 100;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-ExtraLight.ttf');
+  src: url('fonts/Manrope-ExtraLight.ttf');
   font-weight: 200;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-Light.ttf');
+  src: url('fonts/Manrope-Light.ttf');
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-Regular.ttf');
+  src: url('fonts/Manrope-Regular.ttf');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-Medium.ttf');
+  src: url('fonts/Manrope-Medium.ttf');
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-SemiBold.ttf');
+  src: url('fonts/Manrope-SemiBold.ttf');
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-Bold.ttf');
+  src: url('fonts/Manrope-Bold.ttf');
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-ExtraBold.ttf');
+  src: url('fonts/Manrope-ExtraBold.ttf');
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-ExtraBold.ttf');
+  src: url('fonts/Manrope-ExtraBold.ttf');
   font-weight: 900;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Manrope';
-  src: url('/assets/fonts/Manrope-ExtraBold.ttf');
+  src: url('fonts/Manrope-ExtraBold.ttf');
   font-weight: 1000;
   font-display: swap;
 }
