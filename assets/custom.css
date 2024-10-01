@@ -3,7 +3,6 @@ nav {
   box-sizing: border-box;
   background-image: linear-gradient(to right, #164293, #89037a);
   font-family: Manrope, sans-serif !important;
-  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: #fff;
@@ -11,11 +10,17 @@ nav {
 
 /*Decrease ETAS logo size*/
 nav img {
-  transform: scale(0.5); /* Scale the images by 0.5 */
-  display: inline-block;  /* Ensures the image scales properly */
+  width: 25%;
+  height: auto;
+  display: inline-block;
 }
 
-/*Custom Manrope font*/
+/* Remove right padding of navbar elements */
+li a {
+    padding-right: 0 !important;
+}
+
+/*Use custom Manrope font*/
 
 @font-face {
   font-family: 'Manrope';
