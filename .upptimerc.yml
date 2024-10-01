@@ -19,11 +19,11 @@ workflowSchedule:
   uptime: "*/15 * * * *" # this adjusts the frequency of the url monitors: max every 5 minutes
 
 status-website:
+  name: PANTARIS Status
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: demo.upptime.js.org
-  name: PANTARIS Status
-  baseUrl: /status-page-poc2
+  cname: status.pantaris-sandbox.de
+  # baseUrl: /status-page-poc2
   navbar:
     - title: Home
       href: https://pantaris.io
@@ -32,12 +32,20 @@ status-website:
     - title: Contact & Support
       href: https://documentation.pantaris.io/support/contact
   # custom css and styling
-  themeUrl: https://calponia.github.io/status-page-poc2/etas-theme.css
-  logoUrl: https://calponia.github.io/status-page-poc2/logo_white.svg
-  favicon: https://calponia.github.io/status-page-poc2/favicon.png
+  ## without cname
+  # themeUrl: https://calponia.github.io/status-page-poc2/etas-theme.css
+  # logoUrl: https://calponia.github.io/status-page-poc2/logo_white.svg
+  # favicon: https://calponia.github.io/status-page-poc2/favicon.png
+  ## with cname
+  themeUrl: https://status.pantaris-sandbox.de/etas-theme.css
+  logoUrl: https://status.pantaris-sandbox.de/logo_white.svg
+  favicon: https://status.pantaris-sandbox.de/favicon.png
   links:
     - rel: stylesheet
+      ## without cname
       href: https://calponia.github.io/status-page-poc2/custom.css
+      ## with cname
+      href: https://status.pantaris-sandbox.de/custom.css
 
 # configuration of monitoring endpoints: https://upptime.js.org/docs/configuration#endpoints
 sites:
