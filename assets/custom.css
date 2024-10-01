@@ -29,11 +29,31 @@ article.graph {
 }
 */
 
-/*Adjust color of charts on main status page*/
+/*Adjust color of charts on main status page
 article.graph {
   background-color: #164293;
   background-blend-mode: multiply;
 }
+
+*/
+
+article {
+    position: relative;
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #164293;
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
+/*Custom Manrope font*/
 
 @font-face {
   font-family: 'Manrope';
